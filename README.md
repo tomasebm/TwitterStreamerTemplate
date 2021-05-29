@@ -67,4 +67,25 @@ Por último, convertimos el archivo 'sasl_passwd' a una base de datos:
 ```sh
 sudo postmap /etc/postfix/sasl_passwd
 ```
+### 2.2 - Reiniciamos y probamos el funcionamiento
+
+Reiniciamos el sevicio postfix para que tome los cambios:
+
+```sh
+sudo systemctl restart postfix
+```
+Probamos que funcione, deberías recibir un correo electrónico a la dirección que reemplaces en 'userid@gmail.com'
+
+```sh
+echo "Test Postfix Gmail SMTP Relay" | mail -s "Postfix Gmail SMTP Relay" userid@gmail.com
+```
+
+Si no funciona, podés debuggear con:
+
+```sh
+sudo tail /var/log/mail.log
+```
+
+## 3 - Configuramos Cron para mantener el scraper siempre corriendo
+
 
