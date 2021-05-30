@@ -86,6 +86,36 @@ Si no funciona, podés debuggear con:
 sudo tail /var/log/mail.log
 ```
 
-## 3 - Configuramos Cron para mantener el scraper siempre corriendo
+## 3 - Configuramos Cron para mantener el scraper siempre corriendo y activar el monitor de espacio en disco
 
+Abrimos el archivo para configurar scripts en cron
 
+```sh
+sudo crontab -e
+```
+
+Y agregamos los dos scripts del presente repositorio:
+
+```sh
+*/5 * * * * sh /home/ubuntu/TwitterStreamerTemplate/scripts/keepalive.sh >> /home/ubuntu/TwitterStreamerTemplate/scripts/crontablog.log 2>&1
+0 * * * * sh /home/ubuntu/TwitterStreamerTemplate/scripts/diskusagewarning.sh >> /home/ubuntu/TwitterStreamerTemplate/scripts/crontablog2.log 2>&1
+```
+
+Reiniciamos cron:
+
+```sh
+sudo service cron reload
+```
+## 4 - Customizamos el scraper con nuestras credenciales y términos de búsqueda
+
+### 4.1 - Configuramos credenciales
+
+En el archivo 'general_settings.py' debemos configurar nuestras consumer y api keys, así como las access tokens.
+
+### 4.2 - Configuramos nuestros términos de búsqueda
+
+En el archivo 'scrap_tweets.py' verás una variable que se llama 'search_terms', la variable contiene una lista con términos random para que la uses de ejemplo. Ingresá los términos que queiras trackear y listo.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Y listo, ya está todo configurado. Utilizando el programa 'htop' (ya instalado por el script) podemos ver los procesos que corren, debemos verificar que scrap_tweets.py esté corriendo.
