@@ -1,5 +1,5 @@
 # TwitterStreamerTemplate
-Scripts para montar un streamer de tweets en AWS Lightsail.
+Scripts para montar un streamer de Twitter usando tweepy en AWS Lightsail.
 
 > Nota: Crear la instancia seleccionando la imagen Ubuntu 18.04.
 
