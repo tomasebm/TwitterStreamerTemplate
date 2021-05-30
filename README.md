@@ -53,7 +53,7 @@ En el archivo insertamos la siguiente información:
 ```sh
 [smtp.gmail.com]:587 userid@gmail.com:password
 ```
-Reemplazá 'userid@gmail' y el password con tus credenciales de gmail. Te recomiendo consultar como sacar las credenciales en [este link.](https://www.linode.com/docs/guides/configure-postfix-to-send-mail-using-gmail-and-google-apps-on-debian-or-ubuntu/)
+Reemplazá 'userid@gmail' y el password con tus credenciales de gmail. Te recomiendo consultar como sacar las credenciales en [este link.](https://www.linode.com/docs/guides/configure-postfix-to-send-mail-using-gmail-and-google-apps-on-debian-or-ubuntu/) Siempre activá la autenticación de 2 pasos, y configurá una app key. Es muy riesgoso configurar este archivo con tu clave en un archivo de texto plano, por más que le apliquemos permisos de usuario.
 
 Luego, aplicá los siguientes permisos a los archivos, por seguridad:
 
