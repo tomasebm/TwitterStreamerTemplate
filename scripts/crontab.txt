@@ -1,2 +1,0 @@
-*/5 * * * * sh /home/ubuntu/TwitterStreamerTemplate/scripts/keepalive.sh >> /home/ubuntu/TwitterStreamerTemplate/scripts/crontablog.log 2>&1
-0 * * * * sh /home/ubuntu/TwitterStreamerTemplate/scripts/diskusagewarning.sh >> /home/ubuntu/TwitterStreamerTemplate/scripts/crontablog2.log 2>&1

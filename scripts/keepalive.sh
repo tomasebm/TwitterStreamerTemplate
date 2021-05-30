@@ -1,1 +1,1 @@
-pgrep -x python3 >/dev/null && echo "Process found" &&  exit || echo "Process not found" && sudo rm -f /home/ubuntu/TwitterStreamerTemplate/data/tweets.db-wal && sudo rm -f /home/ubuntu/TwitterStreamerTemplate/data/tweets.db-shm && sudo nohup python3 /home/ubuntu/TwitterStreamerTemplate/code/scrap_tweet.py
+pgrep -x python3 >/dev/null && echo "Process found" &&  exit || echo "Process not found" && sudo nohup python3 /home/ubuntu/TwitterStreamerTemplate/code/scrap_tweet.py

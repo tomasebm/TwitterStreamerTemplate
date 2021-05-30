@@ -83,7 +83,7 @@ search_terms = ["endeudado",
                 "#LeydeAlquileres"]
 #%%
 
-db = dataset.connect(general_settings.CONNECTION_STRING)
+db = dataset.connect(general_settings.CONNECTION_STRING,sqlite_wal_mode=False)
 
 class StreamListener(tweepy.StreamListener):
     """ A listener handles tweets that are received from the stream.
