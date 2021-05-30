@@ -118,4 +118,4 @@ En el archivo 'scrap_tweets.py' verás una variable que se llama 'search_terms',
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Y listo, ya está todo configurado. Utilizando el programa 'htop' (ya instalado por el script) podemos ver los procesos que corren, debemos verificar que scrap_tweets.py esté corriendo.
+Y listo, ya está todo configurado. Utilizando el programa 'htop' (ya instalado por el script) podemos ver los procesos que corren, debemos verificar que 'scrap_tweets.py' esté corriendo.
