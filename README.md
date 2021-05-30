@@ -116,6 +116,10 @@ En el archivo 'general_settings.py' debemos configurar nuestras consumer y api k
 
 En el archivo 'scrap_tweets.py' verás una variable que se llama 'search_terms', la variable contiene una lista con términos random para que la uses de ejemplo. Ingresá los términos que quieras trackear y listo.
 
+### 4.3 - Modificamos el script de monitor de espacio en disco
+
+En la carpeta de scripts está el script "diskusagewarning.sh", modificá el archivo con la dirección de mail a la que querés advertir la falta de espacio en disco.
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Y listo, ya está todo configurado. Utilizando el programa 'htop' (ya instalado por el script) podemos ver los procesos que corren, debemos verificar que 'scrap_tweets.py' esté corriendo. De todas maneras cron cada unos minutos va a verificar que esté corriendo el script, y si no lo encuentra lo levanta.
