@@ -53,7 +53,7 @@ En el archivo insertamos la siguiente información:
 ```sh
 [smtp.gmail.com]:587 userid@gmail.com:password
 ```
-Reemplazá userid@gmail y el password con tus credenciales de gmail.
+Reemplazá 'userid@gmail' y el password con tus credenciales de gmail. Te recomiendo consultar como sacar las credenciales en [este link.](https://www.linode.com/docs/guides/configure-postfix-to-send-mail-using-gmail-and-google-apps-on-debian-or-ubuntu/)
 
 Luego, aplicá los siguientes permisos a los archivos, por seguridad:
 
