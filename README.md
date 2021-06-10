@@ -33,6 +33,7 @@ sudo nano /etc/postfix/main.cf
 Agregamos/modificamos las siguientes lineas:
 
 ```sh
+relayhost = [smtp.gmail.com]:587
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options = noanonymous
